@@ -153,15 +153,15 @@ const SignatureGenerator = () => {
 
   return (
     <div>
-        <form onSubmit={handleSubmit(generateSignature)} className="space-y-4">
+        <form onSubmit={handleSubmit(generateSignature)} className="space-y-4 mb-5">
             <input {...register("name")} placeholder="Name" className="p-2 w-full border rounded text-slate-600" />
             <input {...register("role")} placeholder="Role" className="p-2 w-full border rounded text-slate-600" />
             <input {...register("tel")} placeholder="Telephone" className="p-2 w-full border rounded text-slate-600" />
             <input {...register("mobile")} placeholder="Mobile" className="p-2 w-full border rounded text-slate-600" />
             <input {...register("email")} placeholder="Email" className="p-2 w-full border rounded text-slate-600" />
-            <input {...register("websiteUrl")} placeholder="Website URL" className="p-2 w-full border rounded text-slate-600" />
-            <input {...register("websiteDisplay")} placeholder="Website Display Name" className="p-2 w-full border rounded text-slate-600" />
-            <input {...register("bannerImage")} placeholder="Banner Image URL" className="p-2 w-full border rounded text-slate-600" />
+            <input {...register("websiteUrl")} placeholder="Website URL" className="p-2 w-full border rounded text-slate-600" value="https://brandwagon.co.za" />
+            <input {...register("websiteDisplay")} placeholder="Website Display Name" className="p-2 w-full border rounded text-slate-600" value="brandwagon.co.za" />
+            <input {...register("bannerImage")} placeholder="Banner Image URL" className="p-2 w-full border rounded text-slate-600" value="https://brandwagon.co.za/images/sig-banner.png" />
             <button type="submit" className="p-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                 Generate Signature
             </button>
